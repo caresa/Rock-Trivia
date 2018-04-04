@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test Your Music Knowledge</title>
+	<meta name="description" content="Quiz App to Test Music Knowledge">
+	<link rel="stylesheet" href="./main.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|" rel="stylesheet">
+</head>
+<body>
+	
+	<header role='banner'>
+		<h1>Garage <span class='red'>Rock</span> Music Quiz</h1>
+	</header>
+		
+	<div class='col-4'>
+		<img src='./imagefiles/sourceRecord.gif' alt='record player gif' id="js-player">
+		<div id='js-question'>
+			<section id = 'answer'>
+				<h1>Please pick an answer</h1>
+			</section>
+			<div class="question">
+				<span class="question-number"></span>)
+				<span class="question-text"></span>
+			</div>
+			<input type="radio" id="radio-01" name="question-radio" value="">
+			<label for="radio-01" id="question-01"></label>
+			<br>
+			<input type="radio" id="radio-02" name="question-radio" value="">
+			<label for="radio-02" id="question-02"></label>
+			<br>
+			<input type="radio" id="radio-03" name="question-radio" value="">
+			<label for="radio-03" id="question-03"></label>
+			<br>
+			<input type="radio" id="radio-04" name="question-radio" value="">
+			<label for="radio-04" id="question-04"></label>
+		</div>
+		<div id='js-answer'>
+		</div>
+		<div id='final-screen'>
+			<p>You are done!</p>
+		</div>
+
+		<button type="submit" id="nav-forward" class='js-start'>Start Quiz</button>
+		<button type="submit" id='next' class='js-next'>Next</button>
+		</div>
+		<div id="dialog" title="Basic dialog">
+			<p>Please select an answer</p>
+		</div>
+	<form class="js-quiz" action="./data.js" method="post">
+	</form>
+	
+	<footer>
+		<div class="col-4" id="quizNumber">
+			<span id="js-quizNumber">0</span>
+		</div>
+		<div class="col-4" id="quizCounter">
+			<span id="js-quizCounter">0</span>
+		</div>
+	</footer>
+	
+		
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src='./data.js'></script>
+    <script src="./index.js"></script>
+</body>
+</html>
