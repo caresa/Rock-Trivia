@@ -87,7 +87,10 @@ button{
 	display: none;
 }
 
-
+#dialog, #final-screen, #js-answer{
+	text-align: center;
+	margin-top: 2em;
+}
 
 
 

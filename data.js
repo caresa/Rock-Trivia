@@ -2,20 +2,26 @@ const questions = [
 {
 	questionNumber: 1,
 	question: 'What all female band was closely related to and occasionally played with "Thee Headcoats"?',
-	answerOne: 'Broadcast',
-	answerTwo: 'Hinds',
-	answerThree: 'Moving Panoramas',
-	answerFour: 'Thee Headcoatees',
-	correctAnswer: 'Thee Headcoatees'
+	answers: [
+		'Broadcast',
+		'Hinds',
+		'Moving Panoramas',	
+		'Thee Headcoatees'
+	],
+	correctAnswer: 3,
+	answersImg: '<img src="./imageFiles/question1.jpg">'
 },
 {
 	questionNumber: 2,
 	question: 'What is the lead singer of the Pixies birth name?',
-	answerOne: 'Frank Black',
-	answerTwo: 'Black Francis',
-	answerThree: 'Charles Michael Kittridge Thompson IV',
-	answerFour: 'Dave Philips',
-	correctAnswer: 'Charles Michael Kittridge Thompson IV'
+	answers: [
+		'Frank Black',
+		'Black Francis',
+		'Charles Michael Kittridge Thompson IV',
+		'Dave Philips'
+	],
+	correctAnswer: 2,
+	answersImg: '<img src="./imageFiles/question2.jpg">'
 },
 {
 	questionNumber: 3,
@@ -24,7 +30,8 @@ const questions = [
 	answerTwo: 'God Save the Queen',
 	answerThree: 'Pretty Vacant',
 	answerFour: 'Holidays in the Sun',
-	correctAnswer: 'Holidays in the Sun'
+	correctAnswer: 'Holidays in the Sun',
+	answersImg: '<img src="./imageFiles/question3.jpg">'
 },
 {
 	questionNumber: 4,
@@ -33,7 +40,8 @@ const questions = [
 	answerTwo: "Chicago",
 	answerThree: "London",
 	answerFour: "Austin",
-	correctAnswer: "Austin"
+	correctAnswer: "Austin",
+	answersImg: '<img src="./imageFiles/question4.jpg">'
 },
 {
 	questionNumber: 5,
@@ -42,7 +50,8 @@ const questions = [
 	answerTwo: "Circle Jerks",
 	answerThree: "X",
 	answerFour: "Bad Brains",
-	correctAnswer: "X"
+	correctAnswer: "X",
+	answersImg: '<img src="./imageFiles/question5.jpg">'
 },
 {
 	questionNumber: 6,
@@ -51,7 +60,8 @@ const questions = [
 	answerTwo: "The Birthday Party",
 	answerThree: "Grinderman",
 	answerFour: "Nick Cave",
-	correctAnswer: "The Birthday Party"
+	correctAnswer: "The Birthday Party",
+	answersImg: '<img src="./imageFiles/question6.jpg">'
 },
 {
 	questionNumber: 7,
@@ -60,7 +70,8 @@ const questions = [
 	answerTwo: "Jonny Blitz",
 	answerThree: "Jimmy Zero",
 	answerFour: "Gene O’Connor",
-	correctAnswer: "Cheetah Chrome"
+	correctAnswer: "Cheetah Chrome",
+	answersImg: '<img src="./imageFiles/question7.jpg">'
 },
 {
 	questionNumber: 8,
@@ -69,7 +80,8 @@ const questions = [
 	answerTwo: "2012",
 	answerThree: "2008",
 	answerFour: "2004",
-	correctAnswer: "2002"
+	correctAnswer: "2002",
+	answersImg: '<img src="./imageFiles/question8.jpg">'
 },
 {
 	questionNumber: 9, 
@@ -78,7 +90,8 @@ const questions = [
 	answerTwo: "Strawberries",
 	answerThree: "The Black Album",
 	answerFour: "Music for Pleasure",
-	correctAnswer: "Damned Damned Damned"
+	correctAnswer: "Damned Damned Damned",
+	answersImg: '<img src="./imageFiles/question9.jpg">'
 },
 {
 	questionNumber: 10,
@@ -87,7 +100,8 @@ const questions = [
 	answerTwo: "Popular Problems",
 	answerThree: "Songs from a Room",
 	answerFour: "You Want it Darker",
-	correctAnswer: "You Want it Darker"
+	correctAnswer: "You Want it Darker",
+	answersImg: '<img src="./imageFiles/question10.jpg">'
 }
 ]
 

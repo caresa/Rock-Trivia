@@ -15,6 +15,7 @@ let alertText = document.getElementById("dialog");
 let questionNumber = 0;
 let correct = 0;
 let wrong = 0;
+let ansImg = 0;
 
 $(quizNumber).hide();
 $(quizCounter).hide();
@@ -41,9 +42,9 @@ $("#nav-forward").on('click', function(event){
 
 		if (typeof playerAnswer !== 'undefined') {
 			const correctAnswer = questions[questionNumber].correctAnswer;
-			let answerImg = `<img src="./imageFiles/question1.jpeg" alt= "${correctAnswer}">`;
+			//let answerImg = `<img src="./imageFiles/question1.jpg>" alt= "${correctAnswer}">`;
 			let answerText;
-
+			let answerImg = questions[questionNumber].answersImg;
 			$(alertText).hide();
 			$(question).hide();
 
@@ -76,11 +77,12 @@ $("#nav-forward").on('click', function(event){
 				$(alertText).hide();
 				$(question).hide();
 				$(startButton).html('Retake Quiz');
-				debugger
+				finishQuiz(quizCounter);
+				
 				//reload page
 				$(startButton).unbind().on("click", function(event){
-					debugger
-					window.location.reload(true);
+					
+				window.location.reload(true);
 				});
 			}
 				
@@ -94,6 +96,7 @@ $("#nav-forward").on('click', function(event){
 });
 
 $("#next").on('click', function(event) {
+	$('.showQuestion').detach();
 	displayQuestion(questionNumber);
 
 	$(question).show();
@@ -133,23 +136,21 @@ function showNext (button) {
 function displayQuestion(questionNumber) {
 	console.log(questionNumber);
 	$(quizNumber).text((questionNumber+1)+'/'+questions.length);
-	// make sure valid question.
-	// if not finishQuiz()
-	const nextQuestion = [];
-	var question = questions[questionNumber];
-	console.log(question);
+	const quizQuestion = questions[questionNumber];
+	quizQuestion.answers.forEach(function (answer, i){
+		const choice = 
+		`<p class="showQuestion"><input type="radio" id="radio-0${i+1}" name="question-radio" value="${answer}">
+		<label for="radio-0${i+1}" id="question-0${i+1}">${answer}</label></p>`
+		
+		//$(quizQuestion).append($(choice);
+		//$('.question').appendTo(choice);
+		$('#js-question').append(choice);
+	});
+	$('.question-number').text(quizQuestion.questionNumber);
+	$('.question-text').text(quizQuestion.question);
 
-	$('.question-number').text(question.questionNumber);
-	$('.question-text').text(question.question);
-
-	$('#radio-01').val(question.answerOne);
-	$('#question-01').text(question.answerOne);
-	$('#radio-02').val(question.answerTwo);
-	$('#question-02').text(question.answerTwo);
-	$('#radio-03').val(question.answerThree);
-	$('#question-03').text(question.answerThree);
-	$('#radio-04').val(question.answerFour);
-	$('#question-04').text(question.answerFour);
+	
+	
 	
 };
 	
@@ -160,7 +161,9 @@ function keepScore(correct){
 	
 }
 
-function finishQuiz() {
+function finishQuiz(quizCounter) {
+	console.log(quizCounter);
+	$(finalScreen).append(`You got ${correct} out of 10`);
 
 }
 
