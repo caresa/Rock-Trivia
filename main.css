@@ -5,64 +5,24 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, 
+body {
 	height: 100%;
 }
 
-body{
+body {
 	font-family: 'Monoton', cursive;
 	color: black;
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 )
 }
 
-header{
+header {
 	text-align: center;
 	padding: 2em;	
 }
 
-footer{
-	position: fixed;
-    left: 0;
-    bottom: 5em;
-    width: 100%;
-}
-/* Clearfix */
-
-header::before,
-header::after {
-    display: table;
-    content: '';
-}
-header::after {
-    clear: both;
-}
-
-.col-4 img{
- box-sizing: border-box;
- display: block;
- margin: 0 auto;
- width: 33.3%;
- border: .5em #B83640 solid;
- /*padding: 1em;*/
- border-radius: .5em;
-}
-
-#quizNumber, #quizCounter{
-	width: 50%;
-	float: left;
-	text-align: center;
-	padding: .25em;
-}
-
-
-#js-question{
- 	width: 66.6%;
-	margin: 0 auto;
-	display: none;
-}
-
-button{
+button {
 	background-color:rgba(0,0,0,0.65);
 	margin: 0 auto;
 	margin-top: 2.5em;
@@ -77,17 +37,64 @@ button{
     border-radius: .25em;
     cursor: pointer;
 }
+/* Clearfix */
 
-.red{
+/*header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+
+footer {
+	position: fixed;
+    left: 0;
+    bottom: 5em;
+    width: 100%;
+
+ }*/
+
+.col-4 img {
+ box-sizing: border-box;
+ display: block;
+ margin: 0 auto;
+ width: 33.3%;
+ border: .5em #B83640 solid;
+ /*padding: 1em;*/
+ border-radius: .5em;
+}
+
+#quizNumber, 
+#quizCounter {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: .25em;
+}
+
+
+#js-question {
+ 	width: 66.6%;
+	margin: 0 auto;
+	display: none;
+}
+
+
+
+.red {
 	color: #B83640;
 }
 
 
-#js-answer{
+#js-answer {
 	display: none;
 }
 
-#dialog, #final-screen, #js-answer{
+#dialog, 
+#final-screen, 
+#js-answer {
 	text-align: center;
 	margin-top: 2em;
 }
@@ -99,25 +106,3 @@ button{
 
 
 
-/*@media only screen and (min-width: 360px) {
-	#question-count, #score-count {
-		display: inline-block;
-		font-size: 1.8em;
-		margin: 0 .6em .6em;
-	}
-@media only screen and (min-width: 650px) {
-	.feedback-page img {
-		display: block;
-		width: 650px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media only screen and (min-width: 1000px) {
-	.feedback-page h2 {
-		width: 650px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0;
-	}*/
