@@ -25,7 +25,7 @@ const questions = [
 },
 {
 	questionNumber: 3,
-	question: "On the Sex Pistols studio album ‘Never Mind the Bollocks, Here's the Sex Pistols’ what was the only song that Sid Vicious recorded?",
+	question: "On the Sex Pistols studio album 'Never Mind the Bollocks, Here's the Sex Pistols' what was the only song that Sid Vicious recorded?",
 	answers: [
 		'Bodies',
 		'God Save the Queen',
@@ -37,7 +37,7 @@ const questions = [
 },
 {
 	questionNumber: 4,
-	question: "In what city was the video for The Clash song ‘Rock the Casbah’ recorded?",
+	question: "In what city was the video for The Clash song 'Rock the Casbah' recorded?",
 	answers: [
 		"New York",
 		"Chicago",
@@ -97,7 +97,7 @@ const questions = [
 },
 {
 	questionNumber: 9, 
-	question: "What was the title of the Damned’s first album?",
+	question: "What was the title of the Damned's first album?",
 	answers: [
 		"Damned Damned Damned",
 		"Strawberries",
@@ -109,7 +109,7 @@ const questions = [
 },
 {
 	questionNumber: 10,
-	question: "What is the name of Leonard Cohen’s last album?",
+	question: "What is the name of Leonard Cohen's last album?",
 	answers: [
 		"Songs of Love and Hate",
 		"Popular Problems",

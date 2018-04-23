@@ -1,8 +1,7 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, 
@@ -11,59 +10,79 @@ body {
 }
 
 body {
-	font-family: 'Monoton', cursive;
+	font-family: 'Black Han Sans', sans-serif;
 	color: black;
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 )
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+	font-size: 1em;
+}
+
+main{
+	font-family: 'Bungee Inline', cursive;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	body{
+		font-size: .75em;
+	}
 }
 
 header {
 	text-align: center;
-	padding: 2em;	
+	padding: 2em;
+	font-family: 'Monoton', cursive;
+}
+
+#answer{
+  font-family: 'Bungee Inline', cursive;
+  font-size: 2em;
 }
 
 button {
+  font-family: 'Bungee Inline', cursive;
 	background-color:rgba(0,0,0,0.65);
 	margin: 0 auto;
 	margin-top: 2.5em;
 	color: #B83640;
 	padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    border: .25em solid black;
-    border-radius: .25em;
-    cursor: pointer;
-}
-/* Clearfix */
-
-/*header::before,
-header::after {
-    display: table;
-    content: '';
-}
-header::after {
-    clear: both;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  border: .25em solid black;
+  border-radius: .25em;
+  cursor: pointer;
+  margin-bottom: 1.25em;
 }
 
-footer {
-	position: fixed;
-    left: 0;
-    bottom: 5em;
-    width: 100%;
+h1{
+	font-weight: normal;
+}
 
- }*/
+img{
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	width: 33.3%;
+	border: .5em #B83640 solid;
+	border-radius: .5em;
+	margin-top: 2em;
+}
 
-.col-4 img {
- box-sizing: border-box;
- display: block;
- margin: 0 auto;
- width: 33.3%;
- border: .5em #B83640 solid;
- /*padding: 1em;*/
- border-radius: .5em;
+
+.quizTitle{
+	font-size: 3em;
+}
+
+#js-player{
+	 box-sizing: border-box;
+	 display: block;
+	 margin: 0 auto;
+	 width: 33.3%;
+	 border: .5em #B83640 solid;
+	 border-radius: .5em;
 }
 
 #quizNumber, 
@@ -72,24 +91,42 @@ footer {
 	float: left;
 	text-align: center;
 	padding: .25em;
+	font-family: 'Bungee Inline', cursive;
 }
 
+#answer{
+	padding-top: 0px;
+	padding-bottom: 1em;
+	color: #B83640;
+}
 
 #js-question {
- 	width: 66.6%;
+	width: 66.6%;
 	margin: 0 auto;
 	display: none;
+	font-family: 'Bungee Inline', cursive;
+	word-spacing: .5em;
 }
 
-
+.ansTxt{
+	margin-bottom: 4em;
+	font-size: 1.25em;
+}
 
 .red {
 	color: #B83640;
 }
 
+.col-4{
+	font-size: 1.5em;
+}
 
 #js-answer {
 	display: none;
+}
+
+#dialog{
+	font-size: 1em;
 }
 
 #dialog, 
@@ -97,10 +134,29 @@ footer {
 #js-answer {
 	text-align: center;
 	margin-top: 2em;
+	color: #B83640;
+	font-size: 1em;
 }
 
+.question-number::after{
+	content: ":";
+	margin-right: .5em;
 
+}
 
+.question{
+	font-size: 1.25em;
+	margin-bottom: 1em;
+}
+
+.showQuestion label{
+	position: relative;
+	top: 5px;
+	left: 10px;
+	font-size: 1em;
+	margin-bottom: .25em;
+
+}
 
 
 
